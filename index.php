@@ -23,7 +23,7 @@
 <div class="header">
 	<h2>Home Page</h2>
 </div>
-	Welcome to my project page	
+	
 <div class="content">
 
   	<?php if (isset($_SESSION['success'])) : ?>
