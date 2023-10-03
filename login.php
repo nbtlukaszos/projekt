@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration system PHP and MySQL</title>
+  <title>Logowanie</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="header">
-  	<h2>Login</h2>
+  	<h2>Logowanie</h2>
   </div>
 	 
   <form method="post" action="login.html">
