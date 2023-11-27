@@ -1,4 +1,15 @@
-<?php include('server.php') ?>
+<?php include('server.php') ;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+    if ($_POST['username'] == 'admin' && $_POST['password'] == 'admin123') {
+
+        header("Location: admin.php");
+        exit(); 
+    } else {
+
+        echo "Błędny login lub hasło.";
+    }
+}?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +21,7 @@
   	<h2>Logowanie</h2>
   </div>
 	 
-  <form method="post" action="login.html">
+  <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Nazwa</label>
