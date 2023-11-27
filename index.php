@@ -1,6 +1,6 @@
 
-<?php 
-  session_start(); 
+<?php include('server.php') ;
+
 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
