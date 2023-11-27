@@ -1,13 +1,16 @@
 <?php
 session_start();
 
-
+$server = "localhost";
+$username1= "root";
 $username = "";
-$email    = "";
+$password    = "";
+$dbname = "sklep";
+$email = "";
 $errors = array(); 
 
 
-$db = mysqli_connect('sql201.infinityfree.com', 'if0_35160150', 'tAadYVDe5r', 'if0_35160150_project');
+$db = mysqli_connect($server, $username1, $password, $dbname);
 
 
 if (isset($_POST['reg_user'])) {
