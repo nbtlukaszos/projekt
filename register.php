@@ -10,7 +10,7 @@
   	<h2>Rejestracja</h2>
   </div>
 	
-  <form method="post" action="register.html">
+  <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   	  <label>Nazwa</label>
